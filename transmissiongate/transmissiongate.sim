@@ -1,0 +1,7 @@
+| units: 5 tech: scmos format: MIT
+p CB IN OUT 8 16 44 136
+n C IN OUT 8 16 44 72
+R C 38
+R CB 38
+R GND 17
+R Vdd 1167
