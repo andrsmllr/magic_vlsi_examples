@@ -1,0 +1,4 @@
+* SPICE3 file created from diode_pwnd.ext - technology: scmos
+
+.option scale=0.05u
+

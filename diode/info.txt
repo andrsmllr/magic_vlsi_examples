@@ -1,0 +1,6 @@
+It seems that Magics 'extract' command does only handle transistors and does
+not recognize diodes. Different variants to layout a diode were tried.
+The SPICE files for each diode variant shows if anything useful was
+extracted. This only seems to be the case for the diode emulated by FETs with
+gate and source shorted together.
+

@@ -1,0 +1,21 @@
+magic
+tech scmos
+timestamp 1507245638
+<< pwell >>
+rect 0 0 24 18
+<< ndiffusion >>
+rect 12 11 18 12
+rect 12 7 13 11
+rect 17 7 18 11
+rect 12 6 18 7
+<< ndcontact >>
+rect 13 7 17 11
+<< psubstratepcontact >>
+rect 3 7 7 11
+<< metal1 >>
+rect 0 7 3 11
+rect 17 7 24 11
+<< labels >>
+rlabel metal1 1 9 1 9 3 P
+rlabel metal1 22 9 22 9 1 N
+<< end >>

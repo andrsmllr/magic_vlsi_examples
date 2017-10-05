@@ -1,0 +1,9 @@
+timestamp 1507246122
+version 8.1
+tech scmos
+style TSMC0.35um(tsmc35)from:t11c
+scale 1000 1 5
+resistclasses 3700 2800 1018000 1018000 1 6000 6000 80 70 80 40
+node "P" 3 11.13 24 24 pdif 0 0 784 112 0 0 0 0 0 0 0 0 0 0 960 136 0 0 0 0 0 0
+node "N" 1397 1176.97 0 0 nw 400 80 0 0 7904 360 0 0 0 0 0 0 0 0 640 104 0 0 0 0 0 0
+cap "P" "N" 93.8745
