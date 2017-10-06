@@ -1,6 +1,10 @@
 magic
 tech scmos
-timestamp 1507275380
+timestamp 1507286986
+<< checkpaint >>
+rect -24 54 36 58
+rect -24 -6 68 54
+rect -24 -9 36 -6
 << nwell >>
 rect 0 26 43 52
 << pwell >>
@@ -65,7 +69,10 @@ rect 39 44 43 48
 rect 6 39 10 44
 rect 19 33 23 39
 rect 0 27 17 30
+rect 33 26 36 33
 rect 0 20 10 23
+rect 24 23 43 26
+rect 24 17 27 23
 rect 19 13 23 17
 rect 6 8 10 13
 rect 32 8 36 13
@@ -75,6 +82,7 @@ rect 39 4 43 8
 << labels >>
 rlabel metal1 21 46 21 46 1 Vdd!
 rlabel metal1 22 6 22 6 1 GND!
-rlabel metal1 2 28 2 28 1 A
-rlabel metal1 2 21 2 21 1 B
+rlabel metal1 0 27 1 30 3 A
+rlabel metal1 0 20 1 23 3 B
+rlabel metal1 42 23 43 26 7 OUT
 << end >>
