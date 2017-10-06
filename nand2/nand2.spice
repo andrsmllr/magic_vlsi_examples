@@ -10,4 +10,4 @@ M1002 a_56_52# A GND GND nfet w=32 l=12
 +  ad=1280 pd=208 as=640 ps=104
 M1003 OUT B a_56_52# GND nfet w=32 l=12
 +  ad=640 pd=104 as=0 ps=0
-C0 Vdd 0 2.50fF
+C0 Vdd 0 2.59fF
