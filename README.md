@@ -1,10 +1,10 @@
 Magic VLSI Examples
 
-This is a collection of simple examples for Magic VLSI from opencorcuitdesign.com.
+This is a collection of simple examples for Magic VLSI from opencircuitdesign.com.
 All examples are based on Magic VLSI 8.2.27.
 
 Magic VLSI is a open source software for physical chip layout.
-To my knowledge it is the only free and open source software of this kind.
+To my knowledge it is one of only two free and open source softwares of this kind.
 
 I recommend to build Magic VLSI from the latest sources
 git://opencircuitdesign.com/magic-8.2
