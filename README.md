@@ -1,6 +1,4 @@
-#============================================================================
-# Magic VLSI Examples by andrsmllr
-#============================================================================
+Magic VLSI Examples
 
 This is a collection of simple examples for Magic VLSI from opencorcuitdesign.com.
 All examples are based on Magic VLSI 8.2.27.
