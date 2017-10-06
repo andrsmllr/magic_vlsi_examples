@@ -1,0 +1,79 @@
+timestamp 1507281739
+version 8.1
+tech scmos
+style TSMC0.35um(tsmc35)from:t11c
+scale 1000 1 5
+resistclasses 3700 2800 1018000 1018000 1 6000 6000 80 70 80 40
+use nand2 nand2_0 1 0 0 0 1 0
+use nand2 nand2_1 1 0 212 0 1 0
+use nand2 nand2_2 1 0 424 0 1 0
+use nand2 nand2_3 1 0 636 0 1 0
+node "GND!" 4 2407.75 -28 16 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13760 1752 0 0 0 0 0 0
+node "QB" 3 504.96 408 88 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 704 152 5264 888 0 0 0 0
+node "m1_380_64#" 2 493.154 380 64 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1328 264 3200 552 0 0 0 0
+node "E" 2 339.457 -28 92 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 656 152 2864 496 0 0 0 0
+node "m1_196_116#" 0 51.156 196 116 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 192 56 0 0 0 0 0 0
+node "m1_168_112#" 2 324.554 168 112 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 512 128 3200 552 0 0 0 0
+node "D" 0 79.506 -28 116 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 336 80 0 0 0 0 0 0
+node "Q" 2 452.982 592 112 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1104 216 3840 512 0 0 0 0
+node "Vdd!" 4 2407.75 -28 188 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13760 1752 0 0 0 0 0 0
+cap "m1_196_116#" "m1_168_112#" 77.958
+cap "Q" "m1_380_64#" 41.238
+cap "m1_380_64#" "m1_168_112#" 56.003
+cap "E" "D" 96.222
+cap "E" "m1_196_116#" 54.984
+cap "Q" "QB" 181.983
+cap "m1_380_64#" "QB" 781.76
+cap "QB" "m1_168_112#" 117.736
+cap "E" "m1_168_112#" 160.802
+subcap "GND!" -2198.76
+subcap "m1_380_64#" -544.912
+subcap "E" -165.418
+subcap "m1_196_116#" -6.678
+subcap "m1_168_112#" -244.503
+subcap "D" -6.678
+cap "D" "E" 5.949
+cap "nand2_1/OUT" "nand2_0/OUT" 139.932
+cap "nand2_0/OUT" "nand2_1/A" 92.216
+cap "nand2_0/OUT" "E" 62.125
+cap "nand2_1/A" "E" 3.55271e-14
+cap "Vdd!" "nand2_0/OUT" 68.938
+cap "GND!" "E" 64.618
+subcap "QB" -470.28
+subcap "m1_380_64#" -255.671
+subcap "Q" -355.4
+cap "nand2_2/B" "nand2_1/Vdd!" 2.27374e-13
+cap "nand2_2/A" "nand2_1/Vdd!" -1.001
+cap "nand2_2/a_56_52#" "nand2_1/OUT" 147.008
+cap "nand2_1/OUT" "nand2_2/OUT" 78.764
+cap "nand2_1/OUT" "nand2_2/B" 166.277
+cap "nand2_1/OUT" "nand2_2/A" -12.561
+cap "nand2_2/OUT" "nand2_2/B" 203.952
+cap "nand2_1/OUT" "nand2_1/GND!" 175.236
+cap "nand2_2/B" "nand2_2/A" 5.04
+cap "nand2_2/OUT" "nand2_1/GND!" -2.84217e-14
+cap "nand2_1/OUT" "nand2_1/Vdd!" 1.59872e-14
+cap "nand2_2/B" "nand2_1/GND!" 102.842
+cap "nand2_2/OUT" "nand2_1/Vdd!" 126.801
+cap "Q" "nand2_3/Vdd!" 27.249
+cap "QB" "nand2_3/GND!" 16.655
+merge "nand2_2/A" "nand2_0/OUT" -167.488 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48 0 0 0 0 0 0
+merge "nand2_0/OUT" "m1_168_112#"
+merge "nand2_1/B" "nand2_0/B" -178.774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48 0 0 0 0 0 0
+merge "nand2_0/B" "E"
+merge "nand2_1/A" "m1_196_116#" -13.356 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 0 0 0 0 0 0
+merge "nand2_3/GND!" "nand2_2/GND!" -1938.72 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10752 -1472 0 0 0 0 0 0
+merge "nand2_2/GND!" "nand2_1/GND!"
+merge "nand2_1/GND!" "nand2_0/GND!"
+merge "nand2_0/GND!" "GND!"
+merge "nand2_0/A" "D" -13.356 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 0 0 0 0 0 0
+merge "nand2_3/B" "nand2_1/OUT" -208.022 0 0 0 0 0 0 0 0 0 0 0 0 0 0 128 -56 0 0 0 0 0 0
+merge "nand2_1/OUT" "m1_380_64#"
+merge "nand2_3/Vdd!" "nand2_2/Vdd!" -1934.27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10752 -1472 0 0 0 0 0 0
+merge "nand2_2/Vdd!" "nand2_1/Vdd!"
+merge "nand2_1/Vdd!" "nand2_0/Vdd!"
+merge "nand2_0/Vdd!" "Vdd!"
+merge "nand2_3/A" "nand2_2/OUT" -178.086 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48 0 0 0 0 0 0
+merge "nand2_2/OUT" "Q"
+merge "nand2_3/OUT" "nand2_2/B" -303.958 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48 0 0 0 0 0 0
+merge "nand2_2/B" "QB"

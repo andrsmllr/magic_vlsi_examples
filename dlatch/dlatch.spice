@@ -1,0 +1,37 @@
+* SPICE3 file created from dlatch.ext - technology: scmos
+
+.option scale=0.05u
+
+M1000 QB Q Vdd Vdd pfet w=32 l=12
++  ad=1280 pd=208 as=5120 ps=832
+M1001 Vdd nand2_3/B QB Vdd pfet w=32 l=12
++  ad=0 pd=0 as=0 ps=0
+M1002 nand2_3/a_56_52# Q GND GND nfet w=32 l=12
++  ad=1280 pd=208 as=2560 ps=416
+M1003 QB nand2_3/B nand2_3/a_56_52# GND nfet w=32 l=12
++  ad=640 pd=104 as=0 ps=0
+M1004 Q nand2_2/A Vdd Vdd pfet w=32 l=12
++  ad=1280 pd=208 as=0 ps=0
+M1005 Vdd QB Q Vdd pfet w=32 l=12
++  ad=0 pd=0 as=0 ps=0
+M1006 nand2_2/a_56_52# nand2_2/A GND GND nfet w=32 l=12
++  ad=1280 pd=208 as=0 ps=0
+M1007 Q QB nand2_2/a_56_52# GND nfet w=32 l=12
++  ad=640 pd=104 as=0 ps=0
+M1008 nand2_3/B nand2_1/A Vdd Vdd pfet w=32 l=12
++  ad=1280 pd=208 as=0 ps=0
+M1009 Vdd E nand2_3/B Vdd pfet w=32 l=12
++  ad=0 pd=0 as=0 ps=0
+M1010 nand2_1/a_56_52# nand2_1/A GND GND nfet w=32 l=12
++  ad=1280 pd=208 as=0 ps=0
+M1011 nand2_3/B E nand2_1/a_56_52# GND nfet w=32 l=12
++  ad=640 pd=104 as=0 ps=0
+M1012 nand2_2/A D Vdd Vdd pfet w=32 l=12
++  ad=1280 pd=208 as=0 ps=0
+M1013 Vdd E nand2_2/A Vdd pfet w=32 l=12
++  ad=0 pd=0 as=0 ps=0
+M1014 nand2_0/a_56_52# D GND GND nfet w=32 l=12
++  ad=1280 pd=208 as=0 ps=0
+M1015 nand2_2/A E nand2_0/a_56_52# GND nfet w=32 l=12
++  ad=640 pd=104 as=0 ps=0
+C0 Vdd 0 12.79fF
