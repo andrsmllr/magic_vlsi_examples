@@ -6,8 +6,8 @@ M1000 OUT A Vdd Vdd pfet w=32 l=12
 +  ad=1280 pd=208 as=1280 ps=208
 M1001 Vdd B OUT Vdd pfet w=32 l=12
 +  ad=0 pd=0 as=0 ps=0
-M1002 a_56_52# A GND GND nfet w=16 l=12
-+  ad=640 pd=144 as=320 ps=72
-M1003 OUT B a_56_52# GND nfet w=16 l=12
-+  ad=320 pd=72 as=0 ps=0
+M1002 a_56_52# A GND GND nfet w=32 l=12
++  ad=1280 pd=208 as=640 ps=104
+M1003 OUT B a_56_52# GND nfet w=32 l=12
++  ad=640 pd=104 as=0 ps=0
 C0 Vdd 0 2.50fF
