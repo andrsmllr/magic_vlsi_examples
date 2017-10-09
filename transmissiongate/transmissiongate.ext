@@ -1,4 +1,4 @@
-timestamp 1507239300
+timestamp 1507277604
 version 8.1
 tech scmos
 style TSMC0.35um(tsmc35)from:t11c
@@ -10,14 +10,15 @@ node "IN" 10 8.904 24 72 ndc 320 72 640 104 0 0 0 0 0 0 0 0 0 0 1728 280 0 0 0 0
 node "CB" 51 8.904 40 180 pc 0 0 0 0 0 0 0 0 0 0 672 168 0 0 896 144 0 0 0 0 0 0
 node "GND!" 17 17.808 0 0 pw 0 0 512 128 0 0 0 0 10752 416 0 0 0 0 1536 224 0 0 0 0 0 0
 node "Vdd!" 1337 1773.65 0 112 nw 512 128 0 0 11904 440 0 0 0 0 0 0 0 0 1536 224 0 0 0 0 0 0
-cap "GND!" "C" 542.956
-cap "Vdd!" "CB" 542.956
-cap "GND!" "IN" 105.63
-cap "GND!" "OUT" 105.63
-cap "CB" "IN" 54.984
-cap "Vdd!" "IN" 114.534
 cap "Vdd!" "OUT" 114.534
-cap "C" "IN" 54.984
-cap "OUT" "IN" 206.19
+cap "IN" "C" 54.984
+cap "GND!" "IN" 105.63
+cap "CB" "IN" 54.984
+cap "GND!" "OUT" 105.63
+cap "Vdd!" "CB" 542.956
+cap "GND!" "C" 542.956
+cap "Vdd!" "IN" 114.534
+cap "IN" "OUT" 206.19
 device mosfet nfet 44 72 45 73 8 16 "GND!" "C" 16 0 "IN" 16 0 "OUT" 16 0
 device mosfet pfet 44 136 45 137 8 32 "Vdd!" "CB" 16 0 "IN" 32 0 "OUT" 32 0
+subcap "Vdd!" -238.68
