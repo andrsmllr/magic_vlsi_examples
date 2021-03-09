@@ -1,7 +1,11 @@
-| units: 5 tech: scmos format: MIT
-p CB IN OUT 8 16 44 136
+| units: 25 tech: scmos format: MIT
+p CB IN OUT 8 32 44 136
 n C IN OUT 8 16 44 72
-R C 38
-R CB 38
-R GND 17
-R Vdd 1167
+C C GND 5.29
+C Vdd CB 5.29
+R C 151
+R OUT 129
+R IN 129
+R CB 200
+R GND 347
+R Vdd 3392

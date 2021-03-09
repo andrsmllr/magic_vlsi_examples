@@ -1,37 +1,57 @@
-* SPICE3 file created from dlatch.ext - technology: scmos
+* SPICE3 file created from /mnt/m/workspace_git/andrsmllr@github/magic_vlsi_examples/dlatch/dlatch.ext - technology: scmos
 
-.option scale=0.05u
+.option scale=0.25u
 
-M1000 QB Q Vdd Vdd pfet w=32 l=12
-+  ad=1280 pd=208 as=5120 ps=832
-M1001 Vdd nand2_3/B QB Vdd pfet w=32 l=12
+M1000 nand2_2/A E nand2_0/a_56_52# GND nfet w=32 l=12
++  ad=640 pd=104 as=1280 ps=208
+M1001 nand2_0/a_56_52# D GND GND nfet w=32 l=12
++  ad=0 pd=0 as=2560 ps=416
+M1002 Vdd E nand2_2/A Vdd pfet w=32 l=12
++  ad=5120 pd=832 as=1280 ps=208
+M1003 nand2_2/A D Vdd Vdd pfet w=32 l=12
 +  ad=0 pd=0 as=0 ps=0
-M1002 nand2_3/a_56_52# Q GND GND nfet w=32 l=12
-+  ad=1280 pd=208 as=2560 ps=416
-M1003 QB nand2_3/B nand2_3/a_56_52# GND nfet w=32 l=12
-+  ad=640 pd=104 as=0 ps=0
-M1004 Q nand2_2/A Vdd Vdd pfet w=32 l=12
-+  ad=1280 pd=208 as=0 ps=0
-M1005 Vdd QB Q Vdd pfet w=32 l=12
+M1004 nand2_3/B E nand2_1/a_56_52# GND nfet w=32 l=12
++  ad=640 pd=104 as=1280 ps=208
+M1005 nand2_1/a_56_52# nand2_1/A GND GND nfet w=32 l=12
 +  ad=0 pd=0 as=0 ps=0
-M1006 nand2_2/a_56_52# nand2_2/A GND GND nfet w=32 l=12
-+  ad=1280 pd=208 as=0 ps=0
-M1007 Q QB nand2_2/a_56_52# GND nfet w=32 l=12
-+  ad=640 pd=104 as=0 ps=0
-M1008 nand2_3/B nand2_1/A Vdd Vdd pfet w=32 l=12
-+  ad=1280 pd=208 as=0 ps=0
-M1009 Vdd E nand2_3/B Vdd pfet w=32 l=12
+M1006 Vdd E nand2_3/B Vdd pfet w=32 l=12
++  ad=0 pd=0 as=1280 ps=208
+M1007 nand2_3/B nand2_1/A Vdd Vdd pfet w=32 l=12
 +  ad=0 pd=0 as=0 ps=0
-M1010 nand2_1/a_56_52# nand2_1/A GND GND nfet w=32 l=12
-+  ad=1280 pd=208 as=0 ps=0
-M1011 nand2_3/B E nand2_1/a_56_52# GND nfet w=32 l=12
-+  ad=640 pd=104 as=0 ps=0
-M1012 nand2_2/A D Vdd Vdd pfet w=32 l=12
-+  ad=1280 pd=208 as=0 ps=0
-M1013 Vdd E nand2_2/A Vdd pfet w=32 l=12
+M1008 Q QB nand2_2/a_56_52# GND nfet w=32 l=12
++  ad=640 pd=104 as=1280 ps=208
+M1009 nand2_2/a_56_52# nand2_2/A GND GND nfet w=32 l=12
 +  ad=0 pd=0 as=0 ps=0
-M1014 nand2_0/a_56_52# D GND GND nfet w=32 l=12
-+  ad=1280 pd=208 as=0 ps=0
-M1015 nand2_2/A E nand2_0/a_56_52# GND nfet w=32 l=12
-+  ad=640 pd=104 as=0 ps=0
-C0 Vdd 0 12.79fF
+M1010 Vdd QB Q Vdd pfet w=32 l=12
++  ad=0 pd=0 as=1280 ps=208
+M1011 Q nand2_2/A Vdd Vdd pfet w=32 l=12
++  ad=0 pd=0 as=0 ps=0
+M1012 QB nand2_3/B nand2_3/a_56_52# GND nfet w=32 l=12
++  ad=640 pd=104 as=1280 ps=208
+M1013 nand2_3/a_56_52# Q GND GND nfet w=32 l=12
++  ad=0 pd=0 as=0 ps=0
+M1014 Vdd nand2_3/B QB Vdd pfet w=32 l=12
++  ad=0 pd=0 as=1280 ps=208
+M1015 QB Q Vdd Vdd pfet w=32 l=12
++  ad=0 pd=0 as=0 ps=0
+C0 nand2_3/B nand2_2/A 2.02fF
+C1 QB Q 2.49fF
+C2 GND E 17.97fF
+C3 Vdd E 6.43fF
+C4 nand2_1/A GND 3.21fF
+C5 Vdd nand2_1/A 4.94fF
+C6 nand2_3/B QB 4.17fF
+C7 nand2_1/A nand2_2/A 2.43fF
+C8 GND nand2_2/A 5.05fF
+C9 Vdd nand2_2/A 9.54fF
+C10 GND Q 5.05fF
+C11 D GND 3.21fF
+C12 Vdd Q 11.50fF
+C13 Vdd D 4.94fF
+C14 QB GND 11.18fF
+C15 Vdd QB 7.02fF
+C16 nand2_3/B GND 12.02fF
+C17 nand2_3/B Vdd 7.02fF
+C18 nand2_3/B 0 4.70fF
+C19 Q 0 2.69fF
+C20 Vdd 0 40.42fF

@@ -1,46 +1,34 @@
-timestamp 1507279462
-version 8.1
+timestamp 1615325841
+version 8.3
 tech scmos
-style TSMC0.35um(tsmc35)from:t11c
-scale 1000 1 5
-resistclasses 3700 2800 1018000 1018000 1 6000 6000 80 70 80 40
+style lambda=1.0(scna20_orb)
+scale 1000 1 25
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
 use transmissiongate transmissiongate_1 1 0 0 0 -1 432
 use transmissiongate transmissiongate_0 1 0 0 0 1 0
-node "GND!" 1 429.1 -48 16 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2368 328 0 0 0 0 0 0
-node "I0" 0 151.2 -48 104 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 768 128 0 0 0 0 0 0
-node "Vdd!" 1 429.1 -48 208 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2368 328 0 0 0 0 0 0
-node "S" 2 401.152 -48 44 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1408 240 2624 456 0 0 0 0
-node "I1" 0 151.2 -48 312 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 768 128 0 0 0 0 0 0
-node "SB" 2 347.832 -48 180 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1024 192 2624 456 0 0 0 0
-node "GND!" 1 429.1 -48 400 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2368 328 0 0 0 0 0 0
-cap "SB" "S" 345.788
-cap "S" "Vdd!" 193.636
-cap "GND!" "S" 164.952
-cap "SB" "Vdd!" 221.128
-cap "S" "I0" 56.176
-cap "SB" "GND!" 54.984
-cap "SB" "I1" 46.448
-subcap "GND!" -266.784
-subcap "I0" -8.904
-subcap "S" -17.808
-subcap "I1" -8.904
-subcap "SB" -57.936
-subcap "GND!" -346.738
-cap "S" "GND!" -1.13687e-13
-cap "I1" "SB" 9.728
-cap "S" "Vdd!" -5.68434e-14
-cap "SB" "Vdd!" 17.556
-cap "I0" "S" -7.10543e-15
-cap "SB" "GND!" 9.196
-cap "S" "SB" 9.728
-cap "GND!" "transmissiongate_1/C" -1.06581e-14
-merge "transmissiongate_0/Vdd!" "transmissiongate_1/Vdd!" -868.8 -512 -128 0 0 -3840 -272 0 0 0 0 0 0 0 0 -3072 -448 0 0 0 0 0 0
-merge "transmissiongate_1/Vdd!" "Vdd!"
-merge "transmissiongate_0/GND!" "transmissiongate_1/GND!" -622.608 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3072 -544 0 0 0 0 0 0
-merge "transmissiongate_1/GND!" "GND!"
-merge "transmissiongate_0/CB" "transmissiongate_1/C" -75.744 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -64 0 0 0 0 0 0
+node "GND!" 0 6956 -48 16 m1 0 0 0 0 0 0 0 0 0 0 0 0 2368 328 0 0 0 0
+node "I0" 0 2256 -48 104 m1 0 0 0 0 0 0 0 0 0 0 0 0 768 128 0 0 0 0
+node "Vdd!" 0 6956 -48 208 m1 0 0 0 0 0 0 0 0 0 0 0 0 2368 328 0 0 0 0
+node "S" 1 6148 -48 44 m1 0 0 0 0 0 0 0 0 0 0 0 0 1472 248 2624 456 0 0
+node "I1" 0 2256 -48 312 m1 0 0 0 0 0 0 0 0 0 0 0 0 768 128 0 0 0 0
+node "SB" 1 5020 -48 180 m1 0 0 0 0 0 0 0 0 0 0 0 0 1088 200 2624 456 0 0
+node "GND!" 0 6956 -48 400 m1 0 0 0 0 0 0 0 0 0 0 0 0 2368 328 0 0 0 0
+cap "I1" "SB" 540
+cap "Vdd!" "S" 540
+cap "SB" "Vdd!" 540
+cap "I0" "S" 540
+cap "SB" "S" 1080
+subcap "GND!" -4653
+subcap "Vdd!" -4653
+subcap "SB" -188
+subcap "GND!" -6956
+merge "transmissiongate_0/CB" "transmissiongate_1/C" -188 0 0 0 0 0 0 0 0 0 0 0 0 -64 -72 0 0 0 0
 merge "transmissiongate_1/C" "SB"
-merge "transmissiongate_0/IN" "I0" -17.808 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0 0 0 0 0
-merge "transmissiongate_1/IN" "I1" -17.808 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0 0 0 0 0
-merge "transmissiongate_0/C" "transmissiongate_1/CB" -35.616 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -64 0 0 0 0 0 0
+merge "transmissiongate_0/C" "transmissiongate_1/CB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -64 0 0 0 0
 merge "transmissiongate_1/CB" "S"
+merge "transmissiongate_1/IN" "I1" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0 0 0
+merge "transmissiongate_0/IN" "I0" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -32 0 0 0 0
+merge "transmissiongate_0/GND!" "transmissiongate_1/GND!" -9024 0 0 0 0 0 0 0 0 0 0 0 0 -3072 -544 0 0 0 0
+merge "transmissiongate_1/GND!" "GND!"
+merge "transmissiongate_0/Vdd!" "transmissiongate_1/Vdd!" -4512 -512 -128 0 0 0 0 0 0 0 0 0 0 -3072 -448 0 0 -3840 -272
+merge "transmissiongate_1/Vdd!" "Vdd!"

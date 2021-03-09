@@ -1,8 +1,10 @@
 * SPICE3 file created from buffer.ext - technology: scmos
 
-.option scale=0.05u
+.option scale=0.25u
 
-M1000 OUT IN Vdd Vdd nfet w=16 l=8
-+  ad=320 pd=72 as=320 ps=72
-M1001 OUT IN GND GND pfet w=32 l=8
+M1000 OUT IN GND GND pfet w=32 l=8
 +  ad=640 pd=104 as=640 ps=104
+M1001 OUT IN Vdd Vdd nfet w=16 l=8
++  ad=320 pd=72 as=320 ps=72
+C0 IN Vdd 3.61fF
+C1 IN GND 3.61fF

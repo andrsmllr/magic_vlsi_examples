@@ -1,17 +1,16 @@
 timestamp 1507029299
-version 8.1
+version 8.3
 tech scmos
-style TSMC0.35um(tsmc35)from:t11c
-scale 1000 1 5
-resistclasses 3700 2800 1018000 1018000 1 6000 6000 80 70 80 40
-node "OUT" 10 7.791 56 42 ndif 588 98 1176 140 0 0 0 0 0 0 0 0 0 0 2891 406 0 0 0 0 0 0
-node "IN" 108 7.791 14 91 pc 0 0 0 0 0 0 0 0 0 0 4116 574 0 0 980 140 0 0 0 0 0 0
-node "GND!" 8 23.373 0 -28 pw 588 98 441 84 0 0 0 0 15876 504 0 0 0 0 2646 294 0 0 0 0 0 0
-node "Vdd!" 1083 2495.18 0 98 nw 441 84 1176 140 16758 518 0 0 0 0 0 0 0 0 2646 294 0 0 0 0 0 0
-cap "OUT" "IN" 54.984
-cap "OUT" "GND!" 157.446
-cap "OUT" "Vdd!" 281.695
-cap "IN" "GND!" 668.293
-cap "IN" "Vdd!" 804.691
+style lambda=1.0(scna20_orb)
+scale 1000 1 25
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "OUT" 125 0 56 42 ndiff 588 98 1176 140 0 0 0 0 0 0 0 0 2891 406 0 0 0 0
+node "IN" 429 0 14 91 pc 0 0 0 0 4116 574 0 0 0 0 0 0 980 140 0 0 0 0
+node "GND!" 95 0 0 -28 pw 588 98 441 84 0 0 0 0 0 0 0 0 2646 294 0 0 0 0
+node "Vdd!" 2761 0 0 98 nw 441 84 1176 140 0 0 0 0 0 0 0 0 2646 294 0 0 16758 518
+cap "Vdd!" "OUT" 3454.5
+cap "Vdd!" "IN" 10174.9
+cap "GND!" "OUT" 1151.5
+cap "IN" "GND!" 8363.69
 device mosfet nfet 56 28 57 29 14 21 "GND!" "IN" 28 0 "GND!" 21 0 "OUT" 21 0
 device mosfet pfet 56 161 57 162 14 42 "Vdd!" "IN" 28 0 "OUT" 42 0 "Vdd!" 42 0

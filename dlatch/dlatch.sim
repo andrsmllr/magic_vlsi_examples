@@ -1,0 +1,51 @@
+| units: 25 tech: scmos format: MIT
+n E nand2_0/a_56_52# nand2_2/A 12 32 112 52
+n D GND nand2_0/a_56_52# 12 32 44 52
+p E nand2_2/A Vdd 12 32 112 140
+p D Vdd nand2_2/A 12 32 44 140
+n E nand2_1/a_56_52# nand2_3/B 12 32 324 52
+n nand2_1/A GND nand2_1/a_56_52# 12 32 256 52
+p E nand2_3/B Vdd 12 32 324 140
+p nand2_1/A Vdd nand2_3/B 12 32 256 140
+n QB nand2_2/a_56_52# Q 12 32 536 52
+n nand2_2/A GND nand2_2/a_56_52# 12 32 468 52
+p QB Q Vdd 12 32 536 140
+p nand2_2/A Vdd Q 12 32 468 140
+n nand2_3/B nand2_3/a_56_52# QB 12 32 748 52
+n Q GND nand2_3/a_56_52# 12 32 680 52
+p nand2_3/B QB Vdd 12 32 748 140
+p Q Vdd QB 12 32 680 140
+C QB GND 11.18
+C nand2_2/A nand2_3/B 2.02
+C nand2_2/A nand2_1/A 2.43
+C D Vdd 4.94
+C nand2_2/A Vdd 9.54
+C nand2_3/B Vdd 7.02
+C D GND 3.21
+C nand2_2/A GND 5.05
+C nand2_3/B GND 12.02
+C E Vdd 6.43
+C QB nand2_3/B 4.17
+C nand2_1/A Vdd 4.94
+C E GND 17.97
+C nand2_1/A GND 3.21
+C Q Vdd 11.50
+C Q GND 5.05
+C QB Vdd 7.02
+C QB Q 2.49
+R nand2_3/a_56_52# 168
+C nand2_3/B GND 4.70
+R nand2_3/B 782
+C Q GND 2.69
+R Q 694
+R nand2_2/a_56_52# 168
+R QB 782
+R nand2_1/a_56_52# 168
+R E 777
+R nand2_1/A 276
+R GND 2183
+C Vdd GND 40.42
+R Vdd 39958
+R nand2_0/a_56_52# 168
+R nand2_2/A 694
+R D 276

@@ -1,64 +1,60 @@
 magic
 tech scmos
-magscale 1 4
-timestamp 1507277604
-<< checkpaint >>
-rect -104 232 197 233
-rect -116 -8 212 232
-<< nwell >>
-rect 0 112 96 236
+timestamp 1615325314
 << pwell >>
-rect 0 0 96 112
-<< ntransistor >>
-rect 44 72 52 88
-<< ptransistor >>
-rect 44 136 52 168
-<< ndiffusion >>
-rect 40 72 44 88
-rect 52 72 56 88
-<< pdiffusion >>
-rect 40 136 44 168
-rect 52 136 56 168
-<< ndcontact >>
-rect 24 72 40 88
-rect 56 72 72 88
-<< pdcontact >>
-rect 24 136 40 168
-rect 56 136 72 168
-<< psubstratepcontact >>
-rect 16 16 32 32
-rect 64 16 80 32
-<< nsubstratencontact >>
-rect 16 208 32 224
-rect 64 208 80 224
+rect 0 0 24 28
+<< nwell >>
+rect 0 28 24 59
 << polysilicon >>
-rect 44 168 52 180
-rect 44 128 52 136
-rect 44 88 52 96
-rect 44 60 52 72
-<< polycontact >>
-rect 40 180 56 196
-rect 40 44 56 60
+rect 11 42 13 45
+rect 11 32 13 34
+rect 11 22 13 24
+rect 11 15 13 18
+<< ndiffusion >>
+rect 10 18 11 22
+rect 13 18 14 22
+<< pdiffusion >>
+rect 10 34 11 42
+rect 13 34 14 42
 << metal1 >>
-rect 0 208 16 224
-rect 32 208 64 224
-rect 80 208 96 224
-rect 0 180 40 196
-rect 24 120 36 136
-rect 0 104 36 120
-rect 24 88 36 104
-rect 60 120 72 136
-rect 60 104 96 120
-rect 60 88 72 104
-rect 0 44 40 60
-rect 0 16 16 32
-rect 32 16 64 32
-rect 80 16 96 32
+rect 0 52 4 56
+rect 8 52 16 56
+rect 20 52 24 56
+rect 0 45 10 49
+rect 6 30 9 34
+rect 0 26 9 30
+rect 6 22 9 26
+rect 15 30 18 34
+rect 15 26 24 30
+rect 15 22 18 26
+rect 0 11 10 15
+rect 0 4 4 8
+rect 8 4 16 8
+rect 20 4 24 8
+<< ntransistor >>
+rect 11 18 13 22
+<< ptransistor >>
+rect 11 34 13 42
+<< polycontact >>
+rect 10 45 14 49
+rect 10 11 14 15
+<< ndcontact >>
+rect 6 18 10 22
+rect 14 18 18 22
+<< pdcontact >>
+rect 6 34 10 42
+rect 14 34 18 42
+<< psubstratepcontact >>
+rect 4 4 8 8
+rect 16 4 20 8
+<< nsubstratencontact >>
+rect 4 52 8 56
+rect 16 52 20 56
 << labels >>
-rlabel metal1 48 24 48 24 1 GND!
-rlabel metal1 8 52 8 52 1 C
-rlabel metal1 8 188 8 188 1 CB
-rlabel metal1 44 216 44 216 1 Vdd!
-rlabel metal1 0 104 4 120 3 IN
-rlabel metal1 92 104 96 120 7 OUT
+rlabel metal1 12 6 12 6 1 GND!
+rlabel metal1 2 13 2 13 1 C
+rlabel metal1 2 47 2 47 1 CB
+rlabel metal1 11 54 11 54 1 Vdd!
+rlabel metal1 0 26 1 30 3 IN
+rlabel metal1 23 26 24 30 7 OUT
 << end >>

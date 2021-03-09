@@ -1,13 +1,17 @@
 * SPICE3 file created from nand2.ext - technology: scmos
 
-.option scale=0.05u
+.option scale=0.25u
 
-M1000 OUT A Vdd Vdd pfet w=32 l=12
+M1000 OUT B a_56_52# GND nfet w=32 l=12
++  ad=640 pd=104 as=1280 ps=208
+M1001 a_56_52# A GND GND nfet w=32 l=12
++  ad=0 pd=0 as=640 ps=104
+M1002 Vdd B OUT Vdd pfet w=32 l=12
 +  ad=1280 pd=208 as=1280 ps=208
-M1001 Vdd B OUT Vdd pfet w=32 l=12
+M1003 OUT A Vdd Vdd pfet w=32 l=12
 +  ad=0 pd=0 as=0 ps=0
-M1002 a_56_52# A GND GND nfet w=32 l=12
-+  ad=1280 pd=208 as=640 ps=104
-M1003 OUT B a_56_52# GND nfet w=32 l=12
-+  ad=640 pd=104 as=0 ps=0
-C0 Vdd 0 2.59fF
+C0 GND B 8.55fF
+C1 A GND 3.21fF
+C2 Vdd B 3.21fF
+C3 A Vdd 4.94fF
+C4 Vdd OUT 3.81fF
